@@ -271,7 +271,205 @@ nav.sc { padding: 12px 20px; }
 .phead { padding: 0 20px 40px; flex-direction: column; align-items: flex-start; }
 footer { padding: 60px 20px 28px; }
 .ftop { grid-template-columns: 1fr 1fr; gap: 36px; }
+}/* ===== UNIVERSAL LINK COLOR OVERRIDE ===== */
+/* Force all links to gold palette - no blue anywhere */
+
+/* Base anchor tag reset */
+a,
+a *,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #C9A84C !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: #C9A84C !important;
 }
+
+/* Default state */
+a {
+  color: #C9A84C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Link states */
+a:link {
+  color: #C9A84C !important;
+  -webkit-text-fill-color: #C9A84C !important;
+}
+
+a:visited {
+  color: #C9A84C !important;
+  -webkit-text-fill-color: #C9A84C !important;
+}
+
+a:hover {
+  color: #E8D5A3 !important;
+  -webkit-text-fill-color: #E8D5A3 !important;
+}
+
+a:active {
+  color: #E8D5A3 !important;
+  -webkit-text-fill-color: #E8D5A3 !important;
+}
+
+a:focus {
+  color: #C9A84C !important;
+  -webkit-text-fill-color: #C9A84C !important;
+  outline: none;
+}
+
+/* Safari iOS specific overrides */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #C9A84C !important;
+  -webkit-text-fill-color: #C9A84C !important;
+  text-decoration: none !important;
+}
+
+/* Override all child elements of links */
+a > * {
+  color: inherit !important;
+  -webkit-text-fill-color: #C9A84C !important;
+}
+
+a:hover > * {
+  color: #E8D5A3 !important;
+  -webkit-text-fill-color: #E8D5A3 !important;
+}
+
+/* Specific link classes */
+.nlogo,
+.nlogo:link,
+.nlogo:visited {
+  color: #E8D5A3 !important;
+  text-decoration: none !important;
+}
+
+.nlogo:hover {
+  color: #C9A84C !important;
+}
+
+.nlinks a,
+.nlinks a:link,
+.nlinks a:visited {
+  color: #888888;
+  text-decoration: none;
+}
+
+.nlinks a:hover,
+.nlinks a:active {
+  color: #E8D5A3 !important;
+}
+
+.ncta,
+.ncta:link,
+.ncta:visited {
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+  background: #C9A84C;
+}
+
+.ncta:hover,
+.ncta:active {
+  background: #E8D5A3;
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+}
+
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+  background: #C9A84C;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background: #E8D5A3;
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+}
+
+.btn-ghost,
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #E8D5A3 !important;
+  text-decoration: none !important;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #C9A84C !important;
+  text-decoration: none !important;
+}
+
+.flinks a,
+.flinks a:link,
+.flinks a:visited {
+  color: #888888 !important;
+  text-decoration: none !important;
+}
+
+.flinks a:hover {
+  color: #E8D5A3 !important;
+  text-decoration: none !important;
+}
+
+.ccval a,
+.ccval a:link,
+.ccval a:visited {
+  color: #FAF7F2 !important;
+  text-decoration: none !important;
+}
+
+.ccval a:hover {
+  color: #C9A84C !important;
+  text-decoration: none !important;
+}
+
+.wa,
+.wa:link,
+.wa:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove all default link underlines */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  border: none;
+  outline: none;
+}
+
+/* Ensure no blue text anywhere on the page */
+body a {
+  color: #C9A84C !important;
+}
+
+body a:visited {
+  color: #C9A84C !important;
+}
+
+body a:hover {
+  color: #E8D5A3 !important;
+}
+
 </style>
 
 </head>
