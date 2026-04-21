@@ -458,16 +458,14 @@ a:focus {
 }
 
 /* Ensure no blue text anywhere on the page */
-body a {
-  color: #C9A84C !important;
-}
-
-body a:visited {
-  color: #C9A84C !important;
-}
-
-body a:hover {
-  color: #E8D5A3 !important;
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+color:inherit !important;
+-webkit-text-fill-color:inherit !important;
+text-decoration:none !important;
 }
 .btn-primary,
 .btn-primary:link,
